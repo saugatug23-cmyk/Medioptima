@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #115E59;
+  --color-primary: #0F766E;
+  --color-emerald-accent: #16A34A;
+  --color-soft-green: #ECFDF5;
+  --color-bg-base: #F7FAF8;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #10231F;
+  --color-text-secondary: #64746F;
+  --color-border-subtle: #DDE7E2;
+  --color-border-hover: #B4C6BE;
+  
+  --color-warning: #D97706;
+  --color-warning-bg: #FFFBEB;
+  --color-danger: #DC2626;
+  --color-danger-bg: #FEF2F2;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+  }
+  
+  body {
+    @apply font-sans antialiased bg-[var(--color-bg-base)] text-[var(--color-text-primary)];
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-medium text-[var(--color-text-primary)];
+  }
+
+  p {
+    @apply text-[var(--color-text-secondary)];
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 2px 8px -2px rgba(16, 35, 31, 0.05), 0 4px 12px -4px rgba(16, 35, 31, 0.02);
+  }
+  .shadow-elevated {
+    box-shadow: 0 8px 24px -4px rgba(16, 35, 31, 0.08), 0 4px 12px -2px rgba(16, 35, 31, 0.04);
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .animate-subtle-scale {
+    animation: subtleScale 25s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subtleScale {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.03) translate(-1%, -1%); }
+}

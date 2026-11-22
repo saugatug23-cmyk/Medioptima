@@ -1,0 +1,36 @@
+﻿[
+  {
+    "name": "Dolo 650",
+    "genericName": "Paracetamol",
+    "brandName": "Micro Labs",
+    "activeIngredient": "Paracetamol",
+    "strength": "650mg",
+    "dosageForm": "Tablet",
+    "manufacturer": "Micro Labs Ltd",
+    "category": "Analgesics/Antipyretics",
+    "prescriptionRequired": false,
+    "description": "Used for fever and mild to moderate pain.",
+    "price": 30.50,
+    "currency": "INR",
+    "searchableAliases": ["crocin", "fever", "headache", "tylenol"],
+    "source": "Initial Import",
+    "sourceId": "DOLO-001"
+  },
+  {
+    "name": "Augmentin 625 Duo",
+    "genericName": "Amoxicillin and Clavulanic Acid",
+    "brandName": "GSK",
+    "activeIngredient": "Amoxicillin + Clavulanic Acid",
+    "strength": "625mg",
+    "dosageForm": "Tablet",
+    "manufacturer": "GlaxoSmithKline Pharmaceuticals Ltd",
+    "category": "Antibiotic",
+    "prescriptionRequired": true,
+    "description": "Used to treat various bacterial infections.",
+    "price": 201.20,
+    "currency": "INR",
+    "searchableAliases": ["amox", "antibiotic", "infection"],
+    "source": "Initial Import",
+    "sourceId": "AUG-001"
+  }
+]
